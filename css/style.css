@@ -7,8 +7,25 @@ body {
   right: 8rem;
   }
   
+  .breadcrumb{
+display: flex;
+list-style: none;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+.breadcrumb-item{
+margin-right: 10px;
+}
+.breadcrumb-item:not(:last-child)::after{
+  content: '/';
+  margin-left: 10px;
+
+}
+
   .container {
     display: flex;
+
     position: absolute;
     left: 13%;
     /* justify-content: center; /
@@ -88,7 +105,7 @@ body {
   }
   
   .ftrdWrkHeader {
-    position: relative;
+    /* position: relative; */
     left: 20.2rem;
     width: 115rem;
     bottom: 7rem;
@@ -102,7 +119,7 @@ body {
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 115rem;
   }
   
@@ -185,11 +202,42 @@ body {
   }
   
   .backToTop{
+  justify-content: center;
   position: relative;
-  left: 30rem;
+  left: 60rem;
   }
   
   .footerInfo{
   position: relative;
-  left: 83rem;
+  left: 95rem;
+  }
+
+  .container1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+gap: 30px;
+    
+  }
+
+  .mySkills{
+    max-width: 30rem;
+    max-height: 35rem;
+    padding-left: 6rem;
+    /* padding-right: 10rem; */
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    color: white;
+    background-color: #22222b;
+    border-radius: 25px;
+  }
+  .myExperience{
+    max-width: 30rem;
+    max-height: 35rem;
+    padding-left: 6rem;
+    /* padding-right: 10rem; */
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    color: white;
+    background-color: #22222b;
+    border-radius: 25px;
   }
