@@ -1,0 +1,268 @@
+body {
+    background-color: #f5f5ff;
+    margin: 100px, 0, 3rem, 0; 
+  }
+
+  .topSpace {
+    padding: 2.5rem;
+  }
+  
+  .herointro{
+  position: relative;
+  right: 8rem;
+  }
+  
+  .breadcrumb{
+display: flex;
+list-style: none;
+text-decoration: none;
+padding: 0;
+margin: 0;
+}
+.breadcrumb-item{
+margin-right: 10px;
+}
+.breadcrumb-item:not(:last-child)::after{
+  content: '/';
+  margin-left: 10px;
+
+}
+
+  .container {
+    display: flex;
+
+    position: absolute;
+    left: 13%;
+    /* justify-content: center; /
+    flex-direction: row;
+    gap: 7rem;
+    max-width: 120rem;
+    padding: 50px;
+    margin: 10px;
+  }
+  .container p {
+    font-size: 1em;
+    text-wrap: wrap;
+    / margin: 0 20rem 0 0; */
+  }
+  
+  .pinkLetters {
+    color: #ff3a5e;
+  }
+  
+  .figure {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 37rem;
+    max-height: 33rem;
+    padding-left: 6rem;
+    padding-right: 10rem;
+    padding-top: 1rem;
+    padding-bottom: 0rem;
+    background-color: #22222b;
+    border-radius: 25px;
+  }
+  
+  .aboutHead {
+    position: relative;
+    color: white;
+    margin-bottom: 2rem;
+    left: 17rem;
+    bottom: 2rem;
+  }
+  
+  .aboutHead h2 {
+    font-size: 25px;
+  }
+  
+  .aboutMeImg {
+    position: relative;
+    bottom: 5rem;
+    left: 2rem;
+  }
+  
+  .aboutMeP {
+    position: relative;
+    color: white;
+    width: 20rem;
+    right: 4rem;
+    bottom: 4rem;
+  }
+  
+  .navbar-collapse {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 85%;
+    margin-left: 20px;
+  }
+  
+  .navbar-list {
+    list-style: none;
+  }
+  
+  .nav {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    left: 24rem;
+  }
+  
+  .ftrdWrkHeader {
+    /* position: relative; */
+    left: 20.2rem;
+    width: 115rem;
+    bottom: 7rem;
+    font-size: 25px;
+  }
+  
+  .ftrdWrkContainer {
+    bottom: 7.3rem;
+    /* position: relative; */
+    left: 13%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    /* flex-wrap: wrap; */
+    width: 115rem;
+  }
+  
+  .designerHead {
+    position: relative;
+    color: white;
+    margin-bottom: 2rem;
+    left: -2rem;
+    width: 300px;
+    bottom: 0rem;
+  }
+  .designerHead h2 {
+    font-size: 17px;
+  }
+  
+  .designerP {
+    position: relative;
+    width: 27rem;
+    color: white;
+    bottom: 1.5rem;
+  }
+  
+  .designerImg {
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  
+  .prjctsHeader{
+    /* position: relative; */
+    left: 28rem;
+    width: 115rem;
+    bottom: 8rem;
+    font-size: 25px;
+  }
+  
+  .prjctsContainer{
+    bottom: 12rem;
+    /* position: relative; */
+    left: 25%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    flex-wrap: nowrap;
+    width: 76rem;
+  }
+  
+  .prjctsHead {
+    position: relative;
+    color: white;
+    margin-bottom: 2rem;
+    left: 12rem;
+    width: 300px;
+    bottom: 0rem;
+  }
+  .prjctsHead h2 {
+    font-size: 17px;
+  }
+  
+  .prjctsP {
+    position: relative;
+    width: 27rem;
+    color: white;
+    bottom: 1.5rem;
+  }
+  
+  .prjctsImg {
+    position: relative;
+    bottom: 2rem;
+    right: 2rem;
+  }
+  
+  #nav2 {
+    margin-top: 18rem;
+  }
+  .footer{
+    position: relative;
+    /* display: flex; */
+    justify-content: center;
+  }
+  
+  .backToTop{
+  justify-content: center;
+  position: relative;
+  left: 60rem;
+  }
+  
+  .footerInfo{
+  position: relative;
+  left: 95rem;
+  }
+
+  .container1{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+gap: 30px;
+    
+  }
+
+  .mySkills{
+    max-width: 30rem;
+    max-height: 35rem;
+    padding-left: 6rem;
+    /* padding-right: 10rem; */
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    color: white;
+    background-color: #22222b;
+    border-radius: 25px;
+  }
+  .myExperience{
+    max-width: 30rem;
+    max-height: 35rem;
+    padding-left: 6rem;
+    /* padding-right: 10rem; */
+    padding-top: 1rem;
+    padding-bottom: 5rem;
+    color: white;
+    background-color: #22222b;
+    border-radius: 25px;
+  }
+
+  @media only screen and(max-width: 767px){
+    body{
+      font-size: 14px;
+
+    
+    }
+    div{
+      width:100%;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    /* .container1{
+      display: flex;
+      flex-direction: column;
+      width:100%;
+      margin-bottom: 20px;
+      flex-wrap: nowrap;
+    } */
+  }

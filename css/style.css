@@ -1,243 +1,172 @@
 body {
     background-color: #f5f5ff;
-  }
-  
-  .herointro{
-  position: relative;
-  right: 8rem;
-  }
-  
-  .breadcrumb{
-display: flex;
-list-style: none;
-text-decoration: none;
-padding: 0;
-margin: 0;
+    padding: 2rem;
+    font-family: 'Playfair Display', serif;
 }
-.breadcrumb-item{
-margin-right: 10px;
-}
-.breadcrumb-item:not(:last-child)::after{
-  content: '/';
-  margin-left: 10px;
-
-}
-
-  .container {
-    display: flex;
-
-    position: absolute;
-    left: 13%;
-    /* justify-content: center; /
-    flex-direction: row;
-    gap: 7rem;
-    max-width: 120rem;
-    padding: 50px;
-    margin: 10px;
-  }
-  .container p {
-    font-size: 1em;
-    text-wrap: wrap;
-    / margin: 0 20rem 0 0; */
-  }
-  
-  .pinkLetters {
+.pinkLetters {
     color: #ff3a5e;
   }
-  
-  .figure {
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    max-width: 37rem;
-    max-height: 33rem;
-    padding-left: 6rem;
-    padding-right: 10rem;
-    padding-top: 1rem;
-    padding-bottom: 0rem;
-    background-color: #22222b;
-    border-radius: 25px;
-  }
-  
-  .aboutHead {
-    position: relative;
-    color: white;
-    margin-bottom: 2rem;
-    left: 17rem;
-    bottom: 2rem;
-  }
-  
-  .aboutHead h2 {
-    font-size: 25px;
-  }
-  
-  .aboutMeImg {
-    position: relative;
-    bottom: 5rem;
-    left: 2rem;
-  }
-  
-  .aboutMeP {
-    position: relative;
-    color: white;
-    width: 20rem;
-    right: 4rem;
-    bottom: 4rem;
-  }
-  
-  .navbar-collapse {
+.gridContainer{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-gap: 85%;
-    margin-left: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 2 columns */
+    grid-template-rows: repeat(2, 1fr);    /* 3 rows */
+    gap: 10px;                             /* Adjust the gap between grid items */
+    padding: 20px;         /* Optional padding for the entire grid */
   }
-  
-  .navbar-list {
+.nav ul li{
+text-align: right;
+list-style: none;
+line-height: 2rem;
+/* text-align: center; */
+left: 8rem;
+}
+
+.figure h2 {
+    text-align: right;
+}
+.figure img{
+display: block;
+margin-left: auto;
+margin-right: auto;
+width:50%;
+}
+
+.figure{
+    background-color: #22222B;
+    color: white;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 1.5rem;
+}
+
+.prjctsContainer{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 2 columns */
+    grid-template-rows: repeat(1, 1fr); 
+    gap: 10px;                             /* Adjust the gap between grid items */
+    padding: 20px;
+}
+.footerContainer{
+    position: relative;
+}
+.footerInfo{
+    position: absolute;
+    /* text-align: right; */
+    line-height: 0.25%;
+    bottom:0;
+    right: 0;
+}
+
+.backToTop{
+    text-align: center;
+}
+
+/* MY Works Page */
+.nav2 ul li{
+    text-align: right;
     list-style: none;
-  }
-  
-  .nav {
+    line-height: 2rem;
+    /* text-align: center; */
+    /* left: 8rem; */
+}
+.nav2{
+    width:20%;
+}
+
+.flexContainer{
     display: flex;
-    flex-direction: column;
-    position: relative;
-    left: 24rem;
-  }
-  
-  .ftrdWrkHeader {
-    /* position: relative; */
-    left: 20.2rem;
-    width: 115rem;
-    bottom: 7rem;
-    font-size: 25px;
-  }
-  
-  .ftrdWrkContainer {
-    bottom: 7.3rem;
-    /* position: relative; */
-    left: 13%;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    /* flex-wrap: wrap; */
-    width: 115rem;
-  }
-  
-  .designerHead {
-    position: relative;
-    color: white;
-    margin-bottom: 2rem;
-    left: -2rem;
-    width: 300px;
-    bottom: 0rem;
-  }
-  .designerHead h2 {
-    font-size: 17px;
-  }
-  
-  .designerP {
-    position: relative;
-    width: 27rem;
-    color: white;
-    bottom: 1.5rem;
-  }
-  
-  .designerImg {
-    position: relative;
-    bottom: 2rem;
-    right: 2rem;
-  }
-  
-  .prjctsHeader{
-    /* position: relative; */
-    left: 28rem;
-    width: 115rem;
-    bottom: 8rem;
-    font-size: 25px;
-  }
-  
-  .prjctsContainer{
-    bottom: 12rem;
-    /* position: relative; */
-    left: 25%;
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    flex-wrap: nowrap;
-    width: 76rem;
-  }
-  
-  .prjctsHead {
-    position: relative;
-    color: white;
-    margin-bottom: 2rem;
-    left: 12rem;
-    width: 300px;
-    bottom: 0rem;
-  }
-  .prjctsHead h2 {
-    font-size: 17px;
-  }
-  
-  .prjctsP {
-    position: relative;
-    width: 27rem;
-    color: white;
-    bottom: 1.5rem;
-  }
-  
-  .prjctsImg {
-    position: relative;
-    bottom: 2rem;
-    right: 2rem;
-  }
-  
-  #nav2 {
-    margin-top: 18rem;
-  }
-  .footer{
-    position: relative;
-    /* display: flex; */
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+.space h2{
+    position: absolute;
+    bottom:0;
+}
+.uoft{
+    display:flex;
     justify-content: center;
-  }
-  
-  .backToTop{
-  justify-content: center;
-  position: relative;
-  left: 60rem;
-  }
-  
-  .footerInfo{
-  position: relative;
-  left: 95rem;
-  }
+    align-items: center;
+    line-height: 90%;
+    padding-top: 20px;
+    padding-bottom: 50px;
+    /* border-radius: 20px; */
+}
+#removeme{
+    list-style: none;
+}
+.seneca{
+    /* border-radius: 20px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 90%;
 
-  .container1{
+
+}
+.mySkills{
+    border-radius: 20px;
+    line-height: 2rem;
+    background-color: #22222B;
+    color: white;
+    margin: 20px; 
+    padding: 1.5rem;
+    width: 40%;
+    /* height: 70%; */
+
+}
+.myExperience{
+    border-radius: 20px;
+    background-color: #22222B;
+    color: white;
+    margin: 20px; 
+    padding: 1.5rem;
+    width: 40%;
+    /* height: 50%; */
+}
+
+.space{
+    width:20%
+}
+.myExperience img{
+    width: 30%;
+    height: 30%;
+
+
+}
+
+.heading{
+    display: flex;
+}
+.ftrdWrkContainer1{
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;                             /* Adjust the gap between grid items */
+    padding: 20px;
+}
+.footer{
+    position: relative;
+}
+.footerInfo1{
+    /* position: absolute; */
+    text-align: right;
+    line-height: 0.25%;
+    bottom:0;
+    right: 0;
+}
+@media only screen and (max-width: 768px) {
+    body{
+      font-size: 14px;
+      background-color: #ff3a5e;
     
-  }
+    }
+    /* div{
+      width:100%;
+      margin-bottom: 20px;
+      align-items: center;
+    } */ 
+    .gridContainer{
+        grid-template-columns: 1fr;
 
-  .mySkills{
-    max-width: 30rem;
-    max-height: 35rem;
-    padding-left: 6rem;
-    /* padding-right: 10rem; */
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    color: white;
-    background-color: #22222b;
-    border-radius: 25px;
-  }
-  .myExperience{
-    max-width: 30rem;
-    max-height: 35rem;
-    padding-left: 6rem;
-    /* padding-right: 10rem; */
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    color: white;
-    background-color: #22222b;
-    border-radius: 25px;
-  }
+    }
+}
