@@ -20,7 +20,35 @@ line-height: 2rem;
 /* text-align: center; */
 left: 8rem;
 }
+.nav{
+    display: flex;
+    margin-left: auto;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    padding: 10px;
+    /* background-color: #f0f0f0; */
+}
+.navbar-list{
+    /* list-style: none; */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: flex;
+flex-direction: column;
+}
 
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .menu-toggle span {
+    height: 2px;
+    width: 25px;
+    background-color: pink;
+    margin: 5px 0;
+  }
 .figure h2 {
     text-align: right;
 }
@@ -71,6 +99,8 @@ width:50%;
 }
 .nav2{
     width:20%;
+    
+  
 }
 
 .flexContainer{
@@ -112,6 +142,8 @@ width:50%;
     margin: 20px; 
     padding: 1.5rem;
     width: 40%;
+
+    /* order:-4; */
     /* height: 70%; */
 
 }
@@ -157,16 +189,71 @@ width:50%;
 @media only screen and (max-width: 768px) {
     body{
       font-size: 14px;
-      background-color: #ff3a5e;
+      /* background-color: #ff3a5e; */
     
     }
+    .nav{
+        height: 35px;
+    }
+    .navbar-list {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: #f0f0f0;
+    
+      }
+    
+      .navbar-list.active {
+        display: flex;
+      }
+    
+      .menu-toggle {
+        display: flex;
+      }
     /* div{
       width:100%;
       margin-bottom: 20px;
       align-items: center;
     } */ 
     .gridContainer{
+/* height: 60px; */
         grid-template-columns: 1fr;
 
     }
+    .prjctsContainer{
+        grid-template-columns: 1fr;
+
+    }
+    .flexContainer{
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    .nav, .nav2  {  order:-3;}
+    /* .nav,
+    .mySkills,
+    .myExperience{
+        order: 0;
+    } */
+
+    .ftrdWrkContainer1{
+        grid-template-columns: 1fr;
+    }
+    .mySkills{
+        /* margin-right: 20px; */
+        padding-right: 18.5rem;
+        margin-left: 2rem;
+    }
+    .myExperience{
+        padding-right: 18.5rem;
+        margin-left: 2rem;
+    }
+.footerInfo{
+    /* padding-top:10rem; */
+    height: 10px;
+}
 }
